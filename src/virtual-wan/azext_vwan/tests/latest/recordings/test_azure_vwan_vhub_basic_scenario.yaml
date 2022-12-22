@@ -1,0 +1,1442 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-resource/21.1.0b1 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_azure_vwan_route_table000001?api-version=2021-04-01
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001","name":"cli_test_azure_vwan_route_table000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2022-10-12T03:33:59Z"},"properties":{"provisioningState":"Succeeded"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '352'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:03 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"location": "westus"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '22'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -n -g --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvwan\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\",\r\n
+        \ \"etag\": \"W/\\\"c930d2a7-2a8b-4873-8200-1faba12a80c4\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualWans\",\r\n  \"location\": \"westus\",\r\n  \"properties\":
+        {\r\n    \"provisioningState\": \"Updating\",\r\n    \"disableVpnEncryption\":
+        false,\r\n    \"allowBranchToBranchTraffic\": true,\r\n    \"office365LocalBreakoutCategory\":
+        \"None\",\r\n    \"type\": \"Standard\"\r\n  }\r\n}"
+    headers:
+      azure-asyncnotification:
+      - Enabled
+      azure-asyncoperation:
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/24ea5442-11b1-4c6e-8847-142216466bb7?api-version=2021-08-01
+      cache-control:
+      - no-cache
+      content-length:
+      - '535'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:07 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - c1354c26-10a8-45a9-ad0f-2bf952d065d7
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1199'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/24ea5442-11b1-4c6e-8847-142216466bb7?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '29'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:17 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 3b3638a5-4972-448b-8a2a-e319d802f989
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvwan\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\",\r\n
+        \ \"etag\": \"W/\\\"e29f470a-acb8-456f-8b87-127d30841d2b\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualWans\",\r\n  \"location\": \"westus\",\r\n  \"properties\":
+        {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"disableVpnEncryption\":
+        false,\r\n    \"allowBranchToBranchTraffic\": true,\r\n    \"office365LocalBreakoutCategory\":
+        \"None\",\r\n    \"type\": \"Standard\"\r\n  }\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '536'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:17 GMT
+      etag:
+      - W/"e29f470a-acb8-456f-8b87-127d30841d2b"
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 2e81365f-6310-4621-b9cc-42493978cf85
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"location": "SouthCentralUS", "properties": {"addressPrefix": "10.0.0.0/24",
+      "hubRoutingPreference": "ExpressRoute", "sku": "Standard", "virtualRouterAsn":
+      65515, "virtualWan": {"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '346'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvhub\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\",\r\n
+        \ \"etag\": \"W/\\\"26a5c0ec-fd32-49a6-b38c-2950a3643a16\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualHubs\",\r\n  \"location\": \"southcentralus\",\r\n
+        \ \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"virtualHubRouteTableV2s\":
+        [],\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n    \"virtualRouterAsn\":
+        65515,\r\n    \"virtualRouterIps\": [],\r\n    \"routeTable\": {\r\n      \"routes\":
+        []\r\n    },\r\n    \"virtualRouterAutoScaleConfiguration\": {\r\n      \"minCapacity\":
+        2\r\n    },\r\n    \"virtualWan\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\"\r\n
+        \   },\r\n    \"networkVirtualAppliances\": [],\r\n    \"sku\": \"Standard\",\r\n
+        \   \"routingState\": \"None\",\r\n    \"allowBranchToBranchTraffic\": false,\r\n
+        \   \"hubRoutingPreference\": \"ExpressRoute\"\r\n  }\r\n}"
+    headers:
+      azure-asyncnotification:
+      - Enabled
+      azure-asyncoperation:
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+      cache-control:
+      - no-cache
+      content-length:
+      - '1033'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:24 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 170ad586-cc93-404c-9c1a-8038970a39f0
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1199'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:34 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - ac5d6b39-0885-41a1-bc21-e20b03d4255d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:34:45 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 79b29d0a-f6cf-4f32-9ddf-66973c85032f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:35:05 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 3fb81cf2-b8f4-4b36-a9b9-b191f8b6f2e9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:35:25 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 883d9b64-d8ba-4d69-bf0d-423513d73883
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:36:06 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 6ff4279c-040b-4319-b768-9ce828b7e390
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:36:46 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - d5652f8b-28f1-466c-9d46-549204ab19e7
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:38:06 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 2f3a17f7-437d-462b-a7c0-071a8cee5143
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/151be789-27dc-41a3-9002-b5ef73661fe5?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '29'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:40:47 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 3977bb98-ccb7-428e-83b5-6147220af487
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --vwan --address-prefix -l --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvhub\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\",\r\n
+        \ \"etag\": \"W/\\\"c135b735-5625-4651-a798-aee2d4a8cedf\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualHubs\",\r\n  \"location\": \"southcentralus\",\r\n
+        \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"virtualHubRouteTableV2s\":
+        [],\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n    \"virtualRouterAsn\":
+        65515,\r\n    \"virtualRouterIps\": [],\r\n    \"routeTable\": {\r\n      \"routes\":
+        []\r\n    },\r\n    \"virtualRouterAutoScaleConfiguration\": {\r\n      \"minCapacity\":
+        2\r\n    },\r\n    \"virtualWan\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\"\r\n
+        \   },\r\n    \"networkVirtualAppliances\": [],\r\n    \"sku\": \"Standard\",\r\n
+        \   \"routingState\": \"Provisioning\",\r\n    \"allowBranchToBranchTraffic\":
+        false,\r\n    \"hubRoutingPreference\": \"ExpressRoute\"\r\n  }\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1042'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:40:47 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - e746fad3-d9a6-4c3d-9f48-0d3f3f800916
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvhub\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\",\r\n
+        \ \"etag\": \"W/\\\"c135b735-5625-4651-a798-aee2d4a8cedf\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualHubs\",\r\n  \"location\": \"southcentralus\",\r\n
+        \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"virtualHubRouteTableV2s\":
+        [],\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n    \"virtualRouterAsn\":
+        65515,\r\n    \"virtualRouterIps\": [],\r\n    \"routeTable\": {\r\n      \"routes\":
+        []\r\n    },\r\n    \"virtualRouterAutoScaleConfiguration\": {\r\n      \"minCapacity\":
+        2\r\n    },\r\n    \"virtualWan\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\"\r\n
+        \   },\r\n    \"networkVirtualAppliances\": [],\r\n    \"sku\": \"Standard\",\r\n
+        \   \"routingState\": \"Provisioning\",\r\n    \"allowBranchToBranchTraffic\":
+        false,\r\n    \"hubRoutingPreference\": \"ExpressRoute\"\r\n  }\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1042'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:40:48 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - b63a07a4-703f-480c-a1c6-0e04b509dfc7
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub",
+      "location": "southcentralus", "properties": {"addressPrefix": "10.0.0.0/24",
+      "allowBranchToBranchTraffic": false, "hubRoutingPreference": "VpnGateway", "routeTable":
+      {"routes": []}, "sku": "Basic", "virtualHubRouteTableV2s": [], "virtualRouterAsn":
+      65515, "virtualRouterAutoScaleConfiguration": {"minCapacity": 2}, "virtualRouterIps":
+      [], "virtualWan": {"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '688'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvhub\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\",\r\n
+        \ \"etag\": \"W/\\\"058534ed-6c0c-49a3-8bb1-9b99fbff440f\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualHubs\",\r\n  \"location\": \"southcentralus\",\r\n
+        \ \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"virtualHubRouteTableV2s\":
+        [],\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n    \"virtualRouterAsn\":
+        65515,\r\n    \"virtualRouterIps\": [],\r\n    \"routeTable\": {\r\n      \"routes\":
+        []\r\n    },\r\n    \"virtualRouterAutoScaleConfiguration\": {\r\n      \"minCapacity\":
+        2\r\n    },\r\n    \"virtualWan\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\"\r\n
+        \   },\r\n    \"networkVirtualAppliances\": [],\r\n    \"sku\": \"Basic\",\r\n
+        \   \"routingState\": \"Provisioning\",\r\n    \"allowBranchToBranchTraffic\":
+        false,\r\n    \"hubRoutingPreference\": \"VpnGateway\"\r\n  }\r\n}"
+    headers:
+      azure-asyncnotification:
+      - Enabled
+      azure-asyncoperation:
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+      cache-control:
+      - no-cache
+      content-length:
+      - '1036'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:40:49 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - c0fcba34-0f8e-484a-a244-871e91609f31
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1199'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:41:00 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - f5ef57aa-4298-474f-a9f0-e71ae79f01fa
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:41:11 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - a866c336-10c9-487d-a14a-ae81f1824158
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:41:31 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 2b994404-c3e6-4dbc-8e34-24eba41e5f25
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:41:52 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 731c8399-b969-4f89-adc2-4d820e6c2712
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"InProgress\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '30'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:42:32 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - f00af1c3-7027-48b7-83b1-00c4601bbb05
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/southcentralus/operations/639b7ed3-418b-4149-a82e-545a4b16885e?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '29'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:43:13 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 64b58094-ad56-45bb-a5f2-2f87647ad16a
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vhub update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --sku --hub-routing-preference --asn
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) (AAZ) azsdk-python-core/1.24.0 Python/3.8.10 (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub?api-version=2022-05-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvhub\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\",\r\n
+        \ \"etag\": \"W/\\\"2920df23-7eb8-45fd-93d1-446bbc4ad05b\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualHubs\",\r\n  \"location\": \"southcentralus\",\r\n
+        \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"virtualHubRouteTableV2s\":
+        [],\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n    \"virtualRouterAsn\":
+        65515,\r\n    \"virtualRouterIps\": [],\r\n    \"routeTable\": {\r\n      \"routes\":
+        []\r\n    },\r\n    \"virtualRouterAutoScaleConfiguration\": {\r\n      \"minCapacity\":
+        2\r\n    },\r\n    \"virtualWan\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\"\r\n
+        \   },\r\n    \"networkVirtualAppliances\": [],\r\n    \"sku\": \"Basic\",\r\n
+        \   \"routingState\": \"Provisioning\",\r\n    \"allowBranchToBranchTraffic\":
+        false,\r\n    \"hubRoutingPreference\": \"VpnGateway\"\r\n  }\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1037'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:43:13 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 56ce444c-d219-41df-8998-f81934614d65
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvwan\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\",\r\n
+        \ \"etag\": \"W/\\\"47a57b18-fbd4-4cd2-968e-3c13b979926b\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualWans\",\r\n  \"location\": \"westus\",\r\n  \"properties\":
+        {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"disableVpnEncryption\":
+        false,\r\n    \"allowBranchToBranchTraffic\": true,\r\n    \"office365LocalBreakoutCategory\":
+        \"None\",\r\n    \"type\": \"Standard\",\r\n    \"virtualHubs\": [\r\n      {\r\n
+        \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\"\r\n
+        \     }\r\n    ]\r\n  }\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '758'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:43:14 GMT
+      etag:
+      - W/"47a57b18-fbd4-4cd2-968e-3c13b979926b"
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 0a4f209e-dd2b-459c-8606-78612151b997
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan",
+      "location": "westus", "properties": {"disableVpnEncryption": false, "allowBranchToBranchTraffic":
+      true, "type": "Standard"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan update
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '291'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -n --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvwan\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\",\r\n
+        \ \"etag\": \"W/\\\"5ea51eeb-80d0-4ce4-83fd-2d5df58498bc\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualWans\",\r\n  \"location\": \"westus\",\r\n  \"properties\":
+        {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"disableVpnEncryption\":
+        false,\r\n    \"allowBranchToBranchTraffic\": true,\r\n    \"office365LocalBreakoutCategory\":
+        \"None\",\r\n    \"type\": \"Standard\",\r\n    \"virtualHubs\": [\r\n      {\r\n
+        \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\"\r\n
+        \     }\r\n    ]\r\n  }\r\n}"
+    headers:
+      azure-asyncnotification:
+      - Enabled
+      azure-asyncoperation:
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/db5bff4c-012f-4bdd-8a83-b32f969267b1?api-version=2021-08-01
+      cache-control:
+      - no-cache
+      content-length:
+      - '758'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:43:15 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 5f8ce7fd-1d30-4e3c-9bfc-294b4db8ab39
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1199'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/db5bff4c-012f-4bdd-8a83-b32f969267b1?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '29'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:43:45 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - abfa0a87-f944-4b0f-9501-ae5f4bb13c03
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - network vwan update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --type
+      User-Agent:
+      - AZURECLI/2.40.0 (PIP) azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10
+        (Windows-10-10.0.19044-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan?api-version=2021-08-01
+  response:
+    body:
+      string: "{\r\n  \"name\": \"clitestvwan\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualWans/clitestvwan\",\r\n
+        \ \"etag\": \"W/\\\"5ea51eeb-80d0-4ce4-83fd-2d5df58498bc\\\"\",\r\n  \"type\":
+        \"Microsoft.Network/virtualWans\",\r\n  \"location\": \"westus\",\r\n  \"properties\":
+        {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"disableVpnEncryption\":
+        false,\r\n    \"allowBranchToBranchTraffic\": true,\r\n    \"office365LocalBreakoutCategory\":
+        \"None\",\r\n    \"type\": \"Standard\",\r\n    \"virtualHubs\": [\r\n      {\r\n
+        \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_azure_vwan_route_table000001/providers/Microsoft.Network/virtualHubs/clitestvhub\"\r\n
+        \     }\r\n    ]\r\n  }\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '758'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 12 Oct 2022 03:43:46 GMT
+      etag:
+      - W/"5ea51eeb-80d0-4ce4-83fd-2d5df58498bc"
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 70b63bca-e3d6-48e5-b7b5-c13a790395e7
+    status:
+      code: 200
+      message: OK
+version: 1
