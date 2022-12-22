@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@azure/arm-cosmosdb": "^15.2.0"
+  }
+}

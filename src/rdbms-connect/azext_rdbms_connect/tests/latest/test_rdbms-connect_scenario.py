@@ -24,7 +24,7 @@ SERVER_LOGIN_PWD_MAX_LENGTH = 15
 class RdbmsConnectMgmtScenarioTest(ScenarioTest):
 
     postgres_location = 'eastus'
-    mysql_location = 'northeurope'
+    mysql_location = 'westus'
 
     @AllowLargeResponse()
     @ResourceGroupPreparer(location=postgres_location)

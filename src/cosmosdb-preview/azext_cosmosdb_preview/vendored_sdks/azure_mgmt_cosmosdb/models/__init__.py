@@ -416,7 +416,7 @@ __all__ = [
     "CompositePath",
     "ConflictResolutionPolicy",
     "ConnectionError",
-    "ConsistencyPolicy",
+    "ConsistencyPolicysssss",
     "ContainerPartitionKey",
     "ContinuousBackupInformation",
     "ContinuousBackupRestoreLocation",
